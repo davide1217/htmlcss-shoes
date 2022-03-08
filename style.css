@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  position: relative;
+}
+
+header{
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 50px;
+}
+
+.button{
+  display: inline-block;
+  margin: 0 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+header a{
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.overlay{
+  display: inline-block;
+  border-radius: 50%;
+}
+
+header a:hover{
+  cursor: pointer;
+  box-shadow: 3px 3px 5px black;
+}
+
+header .overlay:active{
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.overlay:active a{
+  line-height: 32px;
+  padding: 4px 9px;
+}
+
+
+
+main{
+  height: 100vh;
+}
+
+.container{
+  height: 100%;
+  position: relative;
+}
+
+#red{
+  background-color: red;
+}
+
+#green{
+  background-color: green;
+}
+
+#yellow{
+  background-color: yellow;
+}
+
+.content{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content > h2{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+#red .content > h2{
+  color: yellow;
+}
+
+#green .content > h2{
+  color: yellow;
+}
+
+#yellow .content > h2{
+  color: green;
+}
